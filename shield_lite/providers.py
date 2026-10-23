@@ -2,8 +2,12 @@
 
 import os
 import logging
+import warnings
 from abc import ABC, abstractmethod
 from typing import Optional
+
+warnings.filterwarnings("ignore")
+
 import requests
 from dotenv import load_dotenv
 
