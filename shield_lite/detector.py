@@ -44,7 +44,7 @@ class InjectionDetector:
             ThreatCategory.SYSTEM_LEAKAGE,
             ThreatSeverity.CRITICAL,
             re.compile(
-                r"\b(?:reveal|print|repeat|output|show|display)\s+(?:your|the)?\s*(?:entire\s+|full\s+|hidden\s+|exact\s+)?(?:system prompt|initial instructions|developer prompt|hidden rules)\b",
+                r"\b(?:reveal|print|repeat|output|show|display)\s+(?:your|the)?\s*(?:entire\s+|full\s+|hidden\s+|exact\s+)?(?:system prompt|system instructions|initial instructions|developer prompt|hidden rules|hidden instructions)\b",
                 re.IGNORECASE,
             ),
             "Exfiltration attack attempting to extract proprietary system prompt or secret context.",
